@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+bundle exec jekyll build
+cd _site
+git add .
+git commit -m "auto deploy"
+git push origin master
