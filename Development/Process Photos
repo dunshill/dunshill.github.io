@@ -1,0 +1,5 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+
+python3 gallerybuilder.py OriginalPhotos/ ../assets/
+mv ../assets/gallery_data.html ../_includes
